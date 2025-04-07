@@ -1,12 +1,11 @@
 public class Emprestimos {
+    private long id;
     private Livro livro;
-    private static boolean disponivel = true;
+    private Autor autor;
 
-    public boolean isDisponivel() {
-        return disponivel;
-    }
-
-    public void setDisponivel(boolean diponivel) {
-        this.disponivel = diponivel;
+    Emprestimos(long id, Livro livro, Autor autor) {
+        this.id = id;
+        this.livro = livro;
+        this.autor = autor;
     }
 }
